@@ -1,0 +1,22 @@
+node_modules
+dist
+release
+coverage
+playwright-report
+test-results
+.vite
+.npm-cache
+.lighthouseci
+.tmp
+_zip-check
+
+# Executables & Archives
+*.exe
+*.zip
+*.tar.gz
+
+# Environment & OS
+.DS_Store
+Thumbs.db
+*.log
+
