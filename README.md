@@ -45,8 +45,7 @@ The pitch detection algorithm extracts fundamental frequencies ($f_0$) from digi
 1. **RMS Thresholding**: Filters out background noise ($RMS < 0.002$).
 2. **Difference Function**: Computes squared difference function across tau lags:
    $$d_t(\tau) = \sum_{j=1}^{W} (x_j - x_{j+\tau})^2$$
-3. **Cumulative Mean Normalization**: Minimizes octave errors by normalizing:
-$$d'(\tau) = \begin{cases} 1, & \text{if } \tau = 0 \\[6pt] \dfrac{\tau \cdot d(\tau)}{\sum_{j=1}^{\tau} d(j)}, & \text{if } \tau > 0 \end{cases}$$
+3. **Cumulative Mean Normalization**: Minimizes octave errors by normalizing: $d'(\tau) = \frac{\tau \cdot d(\tau)}{\sum_{j=1}^{\tau} d(j)}$
 4. **Parabolic Interpolation**: Refines tau estimates to fractional sample resolution for sub-Hz accuracy:
    $$f_{\text{detected}} = \frac{\text{sampleRate}}{\tau_{\text{interpolated}}}$$
 
