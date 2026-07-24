@@ -1,4 +1,4 @@
-# 🎸 Guitar Tuner
+# Guitar Tuner
 
 [![CI](https://github.com/Lanque/guitar-tuner/actions/workflows/ci.yml/badge.svg)](https://github.com/Lanque/guitar-tuner/actions/workflows/ci.yml)
 ![React](https://img.shields.io/badge/React-19.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -13,18 +13,18 @@ A fast, high-precision guitar tuner built as a cross-platform desktop applicatio
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎯 **YIN Pitch Detection Engine**: Real-time time-domain autocorrelation pitch extraction with parabolic interpolation and RMS noise floor suppression.
-- 🎸 **Auto & Manual Target String Locking**: Automatically detects the closest string in real time or locks onto a target string.
-- 🎼 **Preset & Custom Tunings**: Out-of-the-box support for Standard E, Drop D, DADGAD, Open D, Half Step Down, plus an interactive **Custom Tuning Editor**.
-- 🎙️ **Audio Input Selection**: Select dedicated audio interfaces (Focusrite, Behringer, etc.) or internal microphones dynamically.
-- 📊 **Visual Cents Gauge**: High-responsiveness needle gauge displaying exact cents offset ($\pm 50$ cents) with instant visual feedback (Flat / Perfect / Sharp).
-- 📦 **Zero-Install Portable Executable**: Standalone Windows desktop app packaged with `electron-builder` into a single `.exe` file.
+- **YIN Pitch Detection Engine**: Real-time time-domain autocorrelation pitch extraction with parabolic interpolation and RMS noise floor suppression.
+- **Auto & Manual Target String Locking**: Automatically detects the closest string in real time or locks onto a target string.
+- **Preset & Custom Tunings**: Out-of-the-box support for Standard E, Drop D, DADGAD, Open D, Half Step Down, plus an interactive **Custom Tuning Editor**.
+- **Audio Input Selection**: Select dedicated audio interfaces (Focusrite, Behringer, etc.) or internal microphones dynamically.
+- **Visual Cents Gauge**: High-responsiveness needle gauge displaying exact cents offset ($\pm 50$ cents) with instant visual feedback (Flat / Perfect / Sharp).
+- **Zero-Install Portable Executable**: Standalone Windows desktop app packaged with `electron-builder` into a single `.exe` file.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technology & Libraries |
 | :--- | :--- |
@@ -38,7 +38,7 @@ A fast, high-precision guitar tuner built as a cross-platform desktop applicatio
 
 ---
 
-## 🧮 Technical Architecture & Signal Processing
+## Technical Architecture & Signal Processing
 
 ### 1. YIN Pitch Detection (`src/audio/yinPitchDetector.ts`)
 The pitch detection algorithm extracts fundamental frequencies ($f_0$) from digital audio streams:
@@ -90,7 +90,7 @@ npm install
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 guitar-tuner/
@@ -111,7 +111,7 @@ guitar-tuner/
 
 ---
 
-## 💻 Building the Desktop App
+## Building the Desktop App
 
 To build a standalone, zero-installation `.exe` file for Windows:
 
@@ -123,6 +123,6 @@ The output portable binary will be generated in `release/Guitar-Tuner-0.1.0.exe`
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for details.
